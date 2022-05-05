@@ -1,2 +1,2 @@
 # libft
-Library of standard functions in C made for 42 cursus. This project is under development, so do not consider it as reference but study. Any help is always welcome.
+C standard functions library made for the 42 cursus. This project is under development, so don't take it as any reference but study. Any help is always welcome.
