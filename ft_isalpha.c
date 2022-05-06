@@ -6,14 +6,14 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 02:09:39 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/05 23:34:52 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/06 11:18:38 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (c);
+		return (1);
 	else
 		return (0);
 }
