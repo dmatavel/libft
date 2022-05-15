@@ -6,14 +6,14 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 14:09:45 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/13 15:13:08 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/15 16:20:08 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-size_t	ft_strlcat(char *dst,const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len = ft_strlen(dst);
 	size_t	i;
