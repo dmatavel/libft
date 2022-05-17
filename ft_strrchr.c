@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 15:56:37 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/17 16:44:02 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/17 18:08:18 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,13 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char	letter;
 	size_t	len;
 
-	letter = c;
-	len = ft_strlen(s) + 1;
-	while (s[len] != letter && s[len] > -1)
+	len = ft_strlen(s);
+	while (s[len--] != (char)c)
 	{
-		if (s[len] == letter)
+		if (s[len] == (char)c)
 			return ((char *)s);
-		len--;
 	}
 	return (NULL);
 }
@@ -33,8 +30,8 @@ char	*ft_strrchr(const char *s, int c)
 int	main(void)
 {
 	const char	string[] = "Hello, World!";
-	int	to_find = 'o';
+	int	to_find = 'k';
 
-	printf("%s\n", (strrchr(string, to_find)));
+	printf("%s\n", (ft_strrchr(string, to_find)));
 			return (0);	
 }
