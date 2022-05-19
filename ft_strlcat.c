@@ -6,14 +6,22 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 14:09:45 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/16 18:43:16 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/19 17:04:45 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	size_t	dst_end;
+
+	dst_end = dst;
+	while (dst_end 
+}
+
+/*
 	size_t	dst_len;
 	size_t	src_len;
 	size_t	i;
@@ -31,3 +39,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	ret = dst_len + src_len;
 	return (ret);
 }
+*/
