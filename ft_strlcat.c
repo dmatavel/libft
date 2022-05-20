@@ -6,37 +6,43 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 14:09:45 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/19 17:04:45 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/20 15:56:39 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	dst_end;
+	size_t	dest_len;
+	size_t	src_len;
+	size_t	i;
 
-	dst_end = dst;
-	while (dst_end 
+	dest_len = ft_strlen(dest);
+	src_len = ft_strlen(src);
+	i = 0;
+	if (size <= dest_len)
+		return (dest_len + src_len);
+	while (src[i] && dest_len < size - 1)
+	{
+		dest[dest_len++] = src[i++];
+	}
+	dest[dest_len] = '\0';
+	return (dest_len + src_len);
 }
 
 /*
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	i;
-	size_t	ret;
+int	main(void)
+{
+	char	src[] = "anotherstring";
+	char	dstsize[20] = "one_string";
+	size_t	n;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	i = 0;
-	while (i < size - 1 && src[i] != '\0')
-	{
-		dst[dst_len + i] = src[i];
-		i++;
-	}
-	dst[dst_len + i] = '\0';
-	ret = dst_len + src_len;
-	return (ret);
+	n = 20;
+	printf("%ld\n", (ft_strlcat(dstsize, src, n)));
+	printf("%s\n", dstsize);
+	return (0);
 }
 */
+
