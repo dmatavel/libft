@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 15:56:37 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/17 18:08:18 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/20 15:56:17 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
+/*
 int	main(void)
 {
 	const char	string[] = "Hello, World!";
@@ -35,3 +36,4 @@ int	main(void)
 	printf("%s\n", (ft_strrchr(string, to_find)));
 			return (0);	
 }
+*/
