@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 17:29:57 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/31 13:16:26 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/05/31 14:20:43 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	uc = c;
 	i = 0;
-	while (*(unsigned char *)s && i <= n)
+	while (*(unsigned char *)s && i < n)
 	{
 		*(unsigned char *)s = uc;
 		i++;
