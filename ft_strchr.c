@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 14:12:32 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/17 15:46:10 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/01 22:28:01 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	letter;
+	unsigned char	uc;
 
-	letter = c;
-	while (*s++ != letter)
+	uc = c;
+	while (*s != uc)
 	{
-		if (*s == letter)
-			return ((char *)s);
+		if (*s == 0)
+			return (NULL);
+		s++;
 	}
-	return (NULL);
+	return ((char *)s);
 }
