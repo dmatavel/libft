@@ -6,14 +6,13 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 14:52:11 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/05/10 14:55:22 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/03 04:44:09 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	else
-		return (c);
+		return ((c + 32));
+	return (c);
 }

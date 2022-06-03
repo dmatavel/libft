@@ -1,0 +1,4 @@
+*.out
+*.o
+libftTester/
+libft.so

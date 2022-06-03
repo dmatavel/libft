@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/10 14:21:44 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/03 04:42:27 by dmatavel         ###   ########.fr       */
+/*   Created: 2022/06/03 04:56:07 by dmatavel          #+#    #+#             */
+/*   Updated: 2022/06/03 05:00:18 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (c >= 'a' && c <= 'z')
-		return ((c - 32));
-	return (c);
+	while (n--)
+	{
+		if (*(char *)s1++ != *(char *)s2++)
+			return (*(unsigned char *)(s1 - 1) - *(unsigned char *)(s2 - 1));
+	}
+	return (0);
 }
