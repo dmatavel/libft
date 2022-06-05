@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 05:17:41 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/03 14:41:02 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/04 21:53:43 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ const char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return ((char*)haystack);
 	while (*haystack && len-- >= needle_len)
 	{
-		if (!(ft_strncmp(haystack, needle, needle_len)))
+		if (!(ft_memcmp(haystack, needle, needle_len)))
 			return ((char*)haystack);
 		haystack++;
 	}
