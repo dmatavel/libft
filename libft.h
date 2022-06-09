@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/09 14:12:51 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/09 15:40:01 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,6 @@ void		ft_putnbr_fd(int n, int fd);
 void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *s);
 int			ft_atoi(const char *str);
+char		*ft_strjoin(const char *s1, const char *s2);
 
 #endif
