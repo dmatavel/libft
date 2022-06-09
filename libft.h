@@ -6,12 +6,15 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/08 04:44:30 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/09 14:12:51 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define INT_MIN -2147483648 
+# define INT_MAX 2147483647
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -41,5 +44,6 @@ void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *s);
+int			ft_atoi(const char *str);
 
 #endif
