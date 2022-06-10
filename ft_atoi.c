@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 12:15:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/09 18:46:20 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/09 21:57:57 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,6 @@ int	ft_atoi(const char *str)
 		sign = 1 - 2 * (str[index++] == '-');
 	while (ft_isdigit(str[index]))
 	{
-		if (base > INT_MAX / 10 || (base == INT_MAX / 10
-				&& str[index] - '0' > 7))
-		{
-			if (sign == 1)
-				return (INT_MAX);
-			else
-				return (INT_MIN);
-		}
 		base = base * 10 + str[index] - '0';
 		index++;
 	}

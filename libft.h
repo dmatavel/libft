@@ -6,18 +6,15 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/09 19:08:08 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/09 22:57:52 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define INT_MIN -2147483648 
-# define INT_MAX 2147483647
-
-# include <unistd.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
