@@ -6,9 +6,21 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 15:25:40 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/10 13:54:24 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/12 11:40:19 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*	
+ *	Description:
+ *	ft_strjoin allocates (with malloc(3)) and returns a new string, which is
+ *	the result of the concatenation of 's1' and 's2'.
+ *	
+ *	Parameters:
+ *	s1 is the prefix string. s2 is the suffix string.
+ *
+ *	Return values:
+ *	The new string or NULL if the allocation fails.
+ */
 
 #include "libft.h"
 

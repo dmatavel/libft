@@ -6,9 +6,24 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 13:38:09 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/12 08:08:21 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/12 11:41:05 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ *	Description:
+ *	ft_substr allocates (with malloc(3)) and returns a substring from the
+ *	string 's'. The substring begins at index 'start' and is of maximum size
+ *	'len'.
+ *
+ *	Parameter:
+ *	The parameter 's' is the string from which to create the substring,
+ *	'start' corresponds to the start index of the substring in the string 's'
+ *	and 'len' to the maximum length of the substring.
+ *	
+ *	Return values:
+ *	The substring or NULL if the allocation fails.
+ */
 
 #include "libft.h"
 
