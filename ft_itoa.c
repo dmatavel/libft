@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 14:04:53 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/14 15:20:13 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/14 18:01:39 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ static void	ft_putnbr(int n, char *s)
 {
 	int					un;
 	char				digit;
-	un = n;
 
+	un = n;
 	if (n <= -2147483648)
 	{
 		ft_strlcat(s, "-2147483648", 12);
@@ -37,7 +37,7 @@ static void	ft_putnbr(int n, char *s)
 
 char	*ft_itoa(int n)
 {
-	long int	un;
+	long int		un;
 	unsigned int	digits;
 	char			*str;
 
@@ -51,22 +51,11 @@ char	*ft_itoa(int n)
 		digits++;
 	}
 	if (n < 0)
-		str = ft_calloc(sizeof(char),  digits + 1 + 1);
+		str = ft_calloc(sizeof(char), digits + 1 + 1);
 	else
-		str = ft_calloc(sizeof(char),  digits + 1);
+		str = ft_calloc(sizeof(char), digits + 1);
 	if (str == NULL)
 		return (NULL);
 	ft_putnbr(n, str);
 	return (str);
-
 }
-
-/*
-
-int	main(void)
-{
-	ft_putstr_fd(ft_itoa(-12345), 1);
-	return (0);
-}
-*/
-
