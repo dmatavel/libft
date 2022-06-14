@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/13 21:06:12 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/14 15:04:56 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,5 @@ char		*ft_strjoin(const char *s1, const char *s2);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strtrim(char const *s1, char const *set);
-
+char		*ft_itoa(int n);
 #endif
