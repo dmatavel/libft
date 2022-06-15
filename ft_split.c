@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 21:54:40 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/15 00:30:47 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/15 00:46:49 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static char	*ft_strndup(const char *s, size_t n)
 {
 	char	*str;
 
-	str = (char *)malloc(sizeof(char) * n + 1);
+	str = (char *)calloc(sizeof(char), n + 1);
 	if (!str)
 		return (NULL);
 	ft_strncpy(str, s, n);
@@ -70,7 +70,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	k = 0;
-	tab = (char **)malloc(sizeof(char) * (ft_cntwrd(s, c)) + 1);
+	tab = (char **)calloc(sizeof(char), (ft_cntwrd(s, c)) + 1);
 	if (!tab)
 		return (NULL);
 	while (s[i])
