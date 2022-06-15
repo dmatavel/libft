@@ -6,11 +6,11 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 22:52:44 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/07 22:56:52 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/15 16:47:17 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" /*unistd.h > write*/
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
