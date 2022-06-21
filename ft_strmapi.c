@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 16:48:45 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/15 16:10:08 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/21 01:26:57 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str = ft_strdup(s);
 	if (!str)
 		return (NULL);
-		i = 0;
+	i = 0;
 	while (s[i])
 	{
 		str[i] = (*f)(i, s[i]);
