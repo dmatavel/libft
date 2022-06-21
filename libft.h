@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/14 21:53:24 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/21 01:14:06 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ char		*ft_strrchr(const char *s, int c);
 
 		/* bsd/string.h */
 
-size_t		ft_strlcat(char *dst, const char *src, size_t size);
-size_t		ft_strlcpy(char *dst, const char *src, size_t size);
-const char	*ft_strnstr(const char *big, const char *little, size_t len);
+size_t		ft_strlcat(char *dest, const char *src, size_t size);
+size_t		ft_strlcpy(char *dest, const char *src, size_t size);
+const char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 		/* strings.h */
 
