@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 13:38:09 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/15 15:35:27 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/21 02:29:59 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t			i;
 	size_t			j;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	if (len > ft_strlen(s))
 		len = ft_strlen(s);
