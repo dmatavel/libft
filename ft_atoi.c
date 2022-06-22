@@ -6,16 +6,11 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 12:15:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/09 21:57:57 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/06/22 16:17:49 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_isspace(int c)
-{
-	return ((c >= 9 && c <= 13) || c == 32);
-}
 
 int	ft_atoi(const char *str)
 {

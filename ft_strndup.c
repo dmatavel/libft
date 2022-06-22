@@ -1,42 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/14 21:54:40 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/22 16:10:40 by dmatavel         ###   ########.fr       */
+/*   Created: 2022/06/22 16:02:00 by dmatavel          #+#    #+#             */
+/*   Updated: 2022/06/22 16:03:24 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+char	*ft_strndup(const char *s, size_t n)
 {
-	int		i;
-	int		j;
-	int		k;
-	char	**tab;
+	char	*str;
 
-	i = 0;
-	k = 0;
-	tab = (char **)ft_calloc(sizeof(char *), (ft_cntwrd(s, c)) + 1);
-	if (!tab)
+	str = (char *)ft_calloc(sizeof(char), n + 1);
+	if (!str)
 		return (NULL);
-	while (s[i])
-	{
-		while (s[i] == c)
-			i++;
-		j = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > j)
-		{
-			tab[k] = ft_strndup(s + j, i - j);
-			k++;
-		}
-		tab[k] = NULL;
-	}
-	return (tab);
+	ft_strncpy(str, s, n);
+	str[n] = '\0';
+	return (str);
 }

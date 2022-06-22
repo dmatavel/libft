@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/14 21:54:40 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/06/22 16:10:40 by dmatavel         ###   ########.fr       */
+/*   Created: 2022/06/22 15:55:23 by dmatavel          #+#    #+#             */
+/*   Updated: 2022/06/22 15:58:12 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
-	int		i;
-	int		j;
-	int		k;
-	char	**tab;
+	unsigned int	i;
 
 	i = 0;
-	k = 0;
-	tab = (char **)ft_calloc(sizeof(char *), (ft_cntwrd(s, c)) + 1);
-	if (!tab)
-		return (NULL);
-	while (s[i])
+	while (i < n && src[i] != '\0')
 	{
-		while (s[i] == c)
-			i++;
-		j = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > j)
-		{
-			tab[k] = ft_strndup(s + j, i - j);
-			k++;
-		}
-		tab[k] = NULL;
+		dest[i] = src[i];
+		i++;
 	}
-	return (tab);
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
