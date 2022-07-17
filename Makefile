@@ -7,7 +7,7 @@ SRCS = ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_isascii.c \
 	   ft_calloc.c ft_atoi.c ft_cntwrd.c ft_putchar_fd.c \
 	   ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strjoin.c \
 	   ft_substr.c ft_striteri.c ft_strmapi.c ft_strtrim.c \
-	   ft_itoa.c ft_split.c
+	   ft_itoa.c ft_split.c ft_cntdgt.c
 
 OBJS = $(SRCS:.c=.o)
 NAME = libft.a
@@ -29,9 +29,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 .PHONY: all clean fclean re
