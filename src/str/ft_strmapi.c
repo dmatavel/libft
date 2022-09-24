@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 16:48:45 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/21 18:10:04 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/09/23 21:04:10 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,24 +30,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (str);
 }
-
-/*
-#include <stdio.h>
-char ft_test_mapi(unsigned int i, char c)
-{
-	i = 0;
-	while (i++ < 10)
-	{
-		printf("%d\n", i);
-		ft_putchar_fd(c, 1);
-	}
-	return (0);	
-}
-
-int main(void)
-{
-
-	ft_strmapi("Hello, world", ft_test_mapi);
-	return (0);
-}
-*/

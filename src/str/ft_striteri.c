@@ -6,23 +6,9 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 08:02:41 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/21 18:09:50 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/09/23 21:02:28 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
- *   Description:
- *   ft_striteri applies the function ’f’ on each character of the string
- *   passed as argument, passing its index as first argument. Each character
- *   is passed by address to 'f' to be modified if necessary.
- * 
- *   Parameters:
- *   's' is the string on which to iterate;
- *   'f' is the function to apply to each character.
- *
- *   Return values:
- *   None.
- */
 
 #include "../../include/libft.h"
 
