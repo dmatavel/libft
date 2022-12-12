@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:55:12 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/21 18:11:05 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/12/12 10:24:48 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	count;
+	int	i;
 
-	count = 0;
-	while (*s)
-	{
-		s++;
-		count++;
-	}
-	return (count);
+	if (!s)
+		return (0);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
