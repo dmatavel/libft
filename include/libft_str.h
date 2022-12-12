@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 16:24:29 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/21 16:46:41 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/12/12 10:54:54 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		**ft_split(char const *s, char c);
+char		*ft_strcheck(char const *str);
 
 #endif
