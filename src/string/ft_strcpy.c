@@ -6,9 +6,11 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 10:34:34 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/12/12 10:34:54 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:55:13 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../../include/libft.h"
 
 char	*ft_strcpy(char *dest, const char *src)
 {
