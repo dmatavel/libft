@@ -6,11 +6,11 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 13:46:33 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/23 21:05:14 by dmatavel         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:51:59 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-include "../../include/libft.h"
+#include "../../include/libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
