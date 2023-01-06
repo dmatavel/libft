@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 16:05:46 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/21 16:47:45 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/01/05 21:30:54 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 
 int			ft_atoi(const char *str);
+int			ft_atol(const char *str);
 void		*ft_calloc(size_t nmemb, size_t size);
 
 #endif
