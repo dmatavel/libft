@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/05 12:07:13 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/01/06 11:12:20 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@
 # include "libft_extends.h"
 # include "libft_tools.h"
 # include "t_list.h"
+# include "libft_macros.h"
 
 #endif //LIBFT_H

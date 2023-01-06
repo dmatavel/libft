@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_extends.h                                    :+:      :+:    :+:   */
+/*   ft_stderror.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmatavel <dmatavel@student.42.rio>          +#+  +:+       +#+       */
+/*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/21 16:32:28 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/06 10:55:05 by dmatavel         ###   ########.fr       */
+/*   Created: 2023/01/06 10:50:22 by dmatavel          #+#    #+#             */
+/*   Updated: 2023/01/06 10:56:24 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_EXTENDS_H
-# define LIBFT_EXTENDS_H
+#include "../../include/libft.h"
 
-void	ft_stderror(void);
-void	ft_putnbr_fd(int n, int fd);
-char	*ft_itoa(int n);
-
-#endif
+void	ft_stderror(void)
+{
+	ft_putstr_fd("Error", 2);
+}
