@@ -4,3 +4,4 @@ libftTester/
 libft.so
 *.swp
 .DS_Store
+.vscode/
