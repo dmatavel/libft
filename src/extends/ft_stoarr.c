@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 12:52:50 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/10 12:54:32 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/01/10 18:31:14 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,7 @@ int	*ft_stoarr(int size, char **str)
 	arr = malloc(sizeof(int) * (size));
 	if (arr == NULL)
 		return (NULL);
-	while ((size) != 0)
-	{	
-		arr[i++] = atoi(str[j++]);
-		size--;
-	}
+	while (0 < size--)
+			arr[i++] = atoi(str[j++]);
 	return (arr);
 }
