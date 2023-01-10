@@ -1,20 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_extends.h                                    :+:      :+:    :+:   */
+/*   ft_stoarr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/21 16:32:28 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/10 12:52:19 by dmatavel         ###   ########.fr       */
+/*   Created: 2023/01/10 12:52:50 by dmatavel          #+#    #+#             */
+/*   Updated: 2023/01/10 12:54:32 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_EXTENDS_H
-# define LIBFT_EXTENDS_H
+#include "../../include/libft.h"
 
-void	ft_putnbr_fd(int n, int fd);
-char	*ft_itoa(int n);
-int		*ft_stoarr(int size, char **str);
+int	*ft_stoarr(int size, char **str)
+{
+	int	i;
+	int	j;
+	int	*arr;
 
-#endif
+	i = 0;
+	j = 1;
+	arr = malloc(sizeof(int) * (size));
+	if (arr == NULL)
+		return (NULL);
+	while ((size) != 0)
+	{	
+		arr[i++] = atoi(str[j++]);
+		size--;
+	}
+	return (arr);
+}
