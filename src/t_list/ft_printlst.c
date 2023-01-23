@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 15:45:33 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/20 16:28:53 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/01/23 12:09:51 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void	ft_printlst(t_list *lst)
     while (tmp != NULL)
 	{
 		if (tmp->next == NULL)
-			ft_printf("%d\n", *(int *)tmp->content);
+			ft_printf("%d\n", tmp->content);
 		else
-			ft_printf("%d, ", *(int *)tmp->content);
+			ft_printf("%d, ", tmp->content);
 		tmp = tmp->next;
 	}
 }
