@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 15:45:33 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/02/02 13:14:13 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/02/06 09:45:24 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,8 @@ void	ft_printlst(t_list *lst)
 	tmp = lst;
 	while (tmp != NULL)
 	{
-		if (tmp->next == NULL)
-		{
-			ft_printf("content: %d\n", tmp->content);
-			ft_printf("index: %d\n", tmp->index);
-		}
-		else
-		{
-			ft_printf("content: %d, ", tmp->content);
-			ft_printf("index: %d, ", tmp->index);
-		}
+		ft_printf("content: %d\n", tmp->content);
+		ft_printf("index: %d\n", tmp->index);
 		tmp = tmp->next;
 	}
 }
