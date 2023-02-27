@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 18:40:14 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/02/27 10:42:06 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/02/27 11:14:28 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static char	*read_file(int fd, char *stock)
 			stock = ft_strcpy(stock, buf);
 		}
 		else
-			stock = ft_strjoin(stock, buf);
+			stock = ft_gnljoin(stock, buf);
 		if (find_newline(buf))
 			break ;
 	}
