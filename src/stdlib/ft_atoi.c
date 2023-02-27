@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 12:15:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2022/09/21 18:09:29 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/01/07 19:04:14 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,27 @@
 
 int	ft_atoi(const char *str)
 {
-	int	index;
+	int	i;
+	int	n;
 	int	sign;
-	int	base;
 
-	index = 0;
-	sign = 1;
-	base = 0;
-	while (ft_isspace(str[index]))
-		index++;
-	if (str[index] == '-' || str[index] == '+')
-		sign = 1 - 2 * (str[index++] == '-');
-	while (ft_isdigit(str[index]))
+	i = 0;
+	n = 0;
+	sign = 0;
+	while (ft_isspace(str[i]))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		base = base * 10 + str[index] - '0';
-		index++;
+		if (str[i] == '-')
+			sign = 1;
+		i++;
 	}
-	return (sign * base);
+	while (ft_isdigit(str[i]))
+	{
+		n = n * 10 + str[i] - 48;
+		i++;
+	}
+	if (sign == 1)
+		n *= -1;
+	return (n);
 }

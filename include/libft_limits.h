@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft_limits.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmatavel <dmatavel@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/04 02:09:39 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/07 19:12:14 by dmatavel         ###   ########.fr       */
+/*   Created: 2023/01/05 12:06:28 by dmatavel          #+#    #+#             */
+/*   Updated: 2023/01/05 12:06:33 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
-{
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
-}
+#ifndef LIBFT_LIMITS_H
+# define LIBFT_LIMITS_H
+
+# define INT_MIN -2147483648
+# define INT_MAX +2147483647
+
+#endif //LIBFT_LIMITS_H
