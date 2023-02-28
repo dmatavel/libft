@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 18:40:34 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/02/27 11:13:19 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/02/28 13:41:39 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,20 @@ int	find_newline(char *s)
 		i++;
 	}
 	return (0);
+}
+
+char	*ft_gnl_strcpy(char *dest, char *src)
+{
+	size_t	i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
 
 char	*ft_gnljoin(char *stock, char *buf)
