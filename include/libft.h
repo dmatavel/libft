@@ -6,7 +6,7 @@
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 13:27:04 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/01/06 11:12:20 by dmatavel         ###   ########.fr       */
+/*   Updated: 2023/02/27 10:39:09 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <signal.h>
-# include <sys/types.h>
 
 /* Standard libc remakes */
 # include "libft_ctype.h"
@@ -35,5 +33,6 @@
 # include "libft_tools.h"
 # include "t_list.h"
 # include "libft_macros.h"
+# include "get_next_line.h"
 
 #endif //LIBFT_H

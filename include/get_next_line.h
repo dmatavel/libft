@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmatavel <dmatavel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/08 04:37:14 by dmatavel          #+#    #+#             */
-/*   Updated: 2023/03/07 14:08:39 by dmatavel         ###   ########.fr       */
+/*   Created: 2022/12/02 18:39:55 by dmatavel          #+#    #+#             */
+/*   Updated: 2023/02/28 13:44:48 by dmatavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-char	*ft_strdup(const char *s)
-{
-	char	*ds;
-	int		i;
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif //BUFFER_SIZE
 
-	ds = malloc(sizeof(char) * (ft_strlen(s) + 1));
-	if (ds == NULL)
-		return (NULL);
-	i = 0;
-	while (s[i] != '\0')
-	{
-		ds[i] = s[i];
-		i++;
-	}
-	ds[i] = '\0';
-	return (ds);
-}
+# define OPEN_MAX 256
+# define _EOF 0
+# define STATUS_ERROR -1
+
+# include "libft.h"
+
+char	*get_next_line(int fd);
+int		find_newline(char *s);
+char	*ft_gnljoin(char *stock, char *buf);
+char	*ft_gnl_strcpy(char *dest, char *src);
+
+#endif //GET_NEXT_LINE
