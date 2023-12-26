@@ -7,7 +7,7 @@ libft - a personal C library.
 
 ## Description
 
-**libft** remakes and extends libc ([C Standard Library](https://en.wikipedia.org/wiki/C_standard_library)). It includes standard libc remakes and also non-standard libc remakes such as [libbsd](https://helpmanual.io/man7/libbsd/) functions and personal/mandatory extensions made at 42 cursus.
+**libft** remakes and extends libc ([C Standard Library](https://en.wikipedia.org/wiki/C_standard_library)). It includes standard libc remakes and also nonstandard libc remakes such as [libbsd](https://helpmanual.io/man7/libbsd/) functions and personal/mandatory extensions made at 42 cursus.
 
 ## Headers
 
@@ -15,25 +15,25 @@ The following are the headers provided by **libft** in his latest stable version
 
 *Standard libc remakes*
 
-libft_ctype.h\
+libft_ctype.h
 libft_string.h\
 libft_strings.h\
 libft_stdlib.h\
 libft_stdio.h\
-libft_limits.h\
+libft_limits.h
 
 *Nonstandard libc remakes*
 
-libft_bsd.h\
+libft_bsd.h
 
 *Libft extensions*
 
-libft_str.h\
+libft_str.h
 libft_extends.h\
 libft_tools.h\
 t_list.h\
 libft_macros.h\
-get_next_line.h\
+get_next_line.h
 
 ## **Download**
 
