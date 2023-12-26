@@ -61,9 +61,11 @@ Install **gcc** with:
 
     sudo apt install build-essential
 
-2. If you downloaded the zip file, extract it and enter the **libft-main** folder. With a right click on your file browser, select the option **Open in Terminal** or something like that. If you've cloned the repository, simple go inside the program's directory. Execute in your terminal:
+2. If you downloaded the zip file, extract it and enter the **libft-main** folder. With a right click on your file browser, select the option **Open in Terminal** or something like that.
 
-       make libft.a
+If you've cloned the repository, simple go inside the program's directory. Execute in your terminal:
+
+	make libft.a
 
 A static library named **libft.a** will be created.
 
