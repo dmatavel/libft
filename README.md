@@ -11,7 +11,7 @@ libft - a personal C library.
 
 ## Headers
 
-The following are the headers provided by **libft** in his latest stable version:
+The following are the headers provided by **libft** in its latest stable version:
 
 *Standard libc remakes*
 
@@ -39,7 +39,7 @@ get_next_line.h
 
 You can download the source code [here](https://github.com/dmatavel/libft/archive/refs/heads/main.zip) or click the "Code" button at the upper-right corner of this repository, selecting "Download Zip".
 
-Alternatively, you can clone this repository in your machine. Simple copy and paste or write the following command in your terminal:
+Alternatively, you can clone this repository in your machine. Simple execute in your terminal:
 
     cd ~/Downloads/ && git clone https://github.com/dmatavel/libft.git
 
@@ -47,9 +47,23 @@ It assumes that you have [Git](https://git-scm.com/) installed and a **Downloads
 
 ## Compilation
 
-If you downloaded the zip file, extract it and enter the **libft-main** folder. With a right click on your file browser, select the option **Open in Terminal** or something like that. If you've cloned the repository, simple go inside the program's directory. Copy and paste or write in your terminal:
+1. Skip this step if you have **[gcc](https://gcc.gnu.org/)** installed.
 
-    make libft.a
+Assuming that you are using Ubuntu 22.04 or 20.04, update your system executing in your terminal:
+
+    sudo apt update
+
+followed by
+
+    sudo apt upgrade
+
+Install **gcc** with:
+
+    sudo apt install build-essential
+
+2. If you downloaded the zip file, extract it and enter the **libft-main** folder. With a right click on your file browser, select the option **Open in Terminal** or something like that. If you've cloned the repository, simple go inside the program's directory. Execute in your terminal:
+
+       make libft.a
 
 A static library named **libft.a** will be created.
 
@@ -71,7 +85,7 @@ This is a free work delivered for educational purposes during the main course
 at 42 <42.rio>.
 
 Feel free to use it, change it, give advices, send me a pull request or
-just slack me if you want to share some thoughts.
+just mail me if you want to share some thoughts.
 
 In jurisdictions that recognize copyright laws, the author or authors
 of this software dedicate any and all copyright interest in the
